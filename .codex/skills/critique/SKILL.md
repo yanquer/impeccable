@@ -1,6 +1,6 @@
 ---
 name: critique
-description: Evaluate design from a UX perspective, assessing visual hierarchy, information architecture, emotional resonance, cognitive load, and overall quality with quantitative scoring, persona-based testing, and actionable feedback. Use when the user asks to review, critique, evaluate, or give feedback on a design or component.
+description: 从 UX 视角评估设计，围绕视觉层级、信息架构、情感共鸣、认知负荷和整体质量进行量化评分、基于用户画像的测试与可执行反馈。适用于用户要求审查、批评、评估，或为某个设计或组件提供反馈时。 Evaluate design from a UX perspective, assessing visual hierarchy, information architecture, emotional resonance, cognitive load, and overall quality with quantitative scoring, persona-based testing, and actionable feedback. Use when the user asks to review, critique, evaluate, or give feedback on a design or component.
 argument-hint: "[area (feature, page, component...)]"
 ---
 
@@ -125,7 +125,7 @@ For each issue, tag with **P0–P3 severity** (consult [heuristics-scoring](refe
 - **[P?] What**: Name the problem clearly
 - **Why it matters**: How this hurts users or undermines goals
 - **Fix**: What to do about it (be concrete)
-- **Suggested command**: Which command could address this (from: $animate, $quieter, $optimize, $adapt, $clarify, $distill, $delight, $onboard, $normalize, $audit, $harden, $polish, $extract, $bolder, $arrange, $typeset, $critique, $colorize, $overdrive)
+- **Suggested command**: Which command could address this (from: $adapt, $animate, $arrange, $audit, $bolder, $clarify, $colorize, $critique, $delight, $distill, $extract, $harden, $normalize, $onboard, $optimize, $overdrive, $polish, $quieter, $typeset)
 
 ### Persona Red Flags
 > *Consult [personas](reference/personas.md)*
@@ -184,7 +184,7 @@ List recommended commands in priority order, based on the user's answers:
 ...
 
 **Rules for recommendations**:
-- Only recommend commands from: $animate, $quieter, $optimize, $adapt, $clarify, $distill, $delight, $onboard, $normalize, $audit, $harden, $polish, $extract, $bolder, $arrange, $typeset, $critique, $colorize, $overdrive
+- Only recommend commands from: $adapt, $animate, $arrange, $audit, $bolder, $clarify, $colorize, $critique, $delight, $distill, $extract, $harden, $normalize, $onboard, $optimize, $overdrive, $polish, $quieter, $typeset
 - Order by the user's stated priorities first, then by impact
 - Each item's description should carry enough context that the command knows what to focus on
 - Map each Priority Issue to the appropriate command

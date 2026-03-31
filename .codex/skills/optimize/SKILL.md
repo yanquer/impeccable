@@ -1,6 +1,6 @@
 ---
 name: optimize
-description: Diagnoses and fixes UI performance across loading speed, rendering, animations, images, and bundle size. Use when the user mentions slow, laggy, janky, performance, bundle size, load time, or wants a faster, smoother experience.
+description: 诊断并修复 UI 在加载速度、渲染、动画、图片和包体大小上的性能问题。适用于用户提到缓慢、卡顿、掉帧、性能、包体积、加载时间，或希望体验更快、更顺滑时。 Diagnoses and fixes UI performance across loading speed, rendering, animations, images, and bundle size. Use when the user mentions slow, laggy, janky, performance, bundle size, load time, or wants a faster, smoother experience.
 argument-hint: "[target]"
 ---
 

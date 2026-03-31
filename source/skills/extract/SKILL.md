@@ -1,6 +1,7 @@
 ---
 name: extract
 description: "Extract and consolidate reusable components, design tokens, and patterns into your design system. Identifies opportunities for systematic reuse and enriches your component library. Use when the user asks to create components, refactor repeated UI patterns, build a design system, or extract tokens."
+description-zh: "提取并整合可复用组件、设计 token 和模式，沉淀进设计系统，识别系统化复用机会并丰富组件库。适用于用户希望创建组件、重构重复 UI 模式、搭建设计系统，或提取 token 时。"
 argument-hint: "[target]"
 user-invocable: true
 ---
@@ -89,4 +90,3 @@ Update design system documentation:
 - Update any Storybook or component catalog
 
 Remember: A good design system is a living system. Extract patterns as they emerge, enrich them thoughtfully, and maintain them consistently.
-

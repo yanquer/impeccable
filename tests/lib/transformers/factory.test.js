@@ -131,6 +131,27 @@ describe('createTransformer factory', () => {
     expect(content).toContain('TRANSFORMED content');
   });
 
+  test('should use descriptionResolver when provided', () => {
+    const config = {
+      ...baseConfig,
+      descriptionResolver: (skill) => skill.descriptionZh
+        ? `${skill.descriptionZh} ${skill.description}`
+        : skill.description,
+    };
+    const transform = createTransformer(config);
+    const skills = [{
+      name: 'test',
+      description: 'English description',
+      descriptionZh: '中文描述',
+      body: 'Body',
+    }];
+    transform(skills, TEST_DIR);
+
+    const content = fs.readFileSync(path.join(TEST_DIR, 'cursor/.test/skills/test/SKILL.md'), 'utf-8');
+    const parsed = parseFrontmatter(content);
+    expect(parsed.frontmatter.description).toBe('中文描述 English description');
+  });
+
   test('should support prefix option', () => {
     const transform = createTransformer(baseConfig);
     const skills = [{ name: 'audit', description: 'Audit', userInvocable: true, body: 'Body' }];

@@ -1,6 +1,7 @@
 ---
 name: teach-impeccable
 description: One-time setup that gathers design context for your project and saves it to your AI config file. Run once to establish persistent design guidelines.
+description-zh: 一次性收集项目的设计上下文并保存到 AI 配置文件中，用于建立持久可复用的设计指导。适用于需要先完成初始化，并为后续会话沉淀稳定设计规范时。
 user-invocable: true
 ---
 

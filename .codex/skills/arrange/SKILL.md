@@ -1,6 +1,6 @@
 ---
 name: arrange
-description: Improve layout, spacing, and visual rhythm. Fixes monotonous grids, inconsistent spacing, and weak visual hierarchy. Use when the user mentions layout feeling off, spacing issues, visual hierarchy, crowded UI, alignment problems, or wanting better composition.
+description: 改善布局、间距和视觉节奏，修复单调网格、间距不一致和层级薄弱的问题。适用于用户提到布局别扭、间距问题、视觉层级不足、界面拥挤、对齐问题，或想要更好构图时。 Improve layout, spacing, and visual rhythm. Fixes monotonous grids, inconsistent spacing, and weak visual hierarchy. Use when the user mentions layout feeling off, spacing issues, visual hierarchy, crowded UI, alignment problems, or wanting better composition.
 argument-hint: "[target]"
 ---
 

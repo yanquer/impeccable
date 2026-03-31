@@ -46,7 +46,7 @@ const FIELD_SPECS = {
  * @returns {Function} transform(skills, distDir, options?)
  */
 export function createTransformer(config) {
-  const { provider, configDir, displayName, frontmatterFields = [], bodyTransform, placeholderProvider } = config;
+  const { provider, configDir, displayName, frontmatterFields = [], bodyTransform, placeholderProvider, descriptionResolver } = config;
   const placeholderKey = placeholderProvider || provider;
 
   const activeFields = frontmatterFields
@@ -71,11 +71,14 @@ export function createTransformer(config) {
     for (const skill of skills) {
       const skillName = `${prefix}${skill.name}`;
       const skillDir = path.join(skillsDir, skillName);
+      const resolvedDescription = descriptionResolver
+        ? descriptionResolver(skill)
+        : skill.description;
 
       // Build frontmatter
       const frontmatterObj = {
         name: skillName,
-        description: skill.description,
+        description: resolvedDescription || skill.description || '',
       };
 
       for (const spec of activeFields) {

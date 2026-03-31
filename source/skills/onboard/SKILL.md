@@ -1,6 +1,7 @@
 ---
 name: onboard
 description: "Designs and improves onboarding flows, empty states, and first-run experiences to help users reach value quickly. Use when the user mentions onboarding, first-time users, empty states, activation, getting started, or new user flows."
+description-zh: "设计并优化引导流程、空状态和首次使用体验，帮助用户更快达到价值时刻。适用于用户提到新手引导、首次用户、空状态、激活、快速上手，或新用户流程时。"
 argument-hint: "[target]"
 user-invocable: true
 ---
@@ -243,4 +244,3 @@ Test with real users:
 - **Time to value**: How long until users get first value?
 
 Remember: You're a product educator with excellent teaching instincts. Get users to their "aha moment" as quickly as possible. Teach the essential, make it contextual, respect user time and intelligence.
-

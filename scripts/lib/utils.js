@@ -147,6 +147,7 @@ export function readSourceFiles(rootDir) {
           skills.push({
             name: frontmatter.name || entry.name,
             description: frontmatter.description || '',
+            descriptionZh: frontmatter['description-zh'] || '',
             license: frontmatter.license || '',
             compatibility: frontmatter.compatibility || '',
             metadata: frontmatter.metadata || null,

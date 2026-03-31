@@ -1,6 +1,6 @@
 ---
 name: extract
-description: Extract and consolidate reusable components, design tokens, and patterns into your design system. Identifies opportunities for systematic reuse and enriches your component library. Use when the user asks to create components, refactor repeated UI patterns, build a design system, or extract tokens.
+description: 提取并整合可复用组件、设计 token 和模式，沉淀进设计系统，识别系统化复用机会并丰富组件库。适用于用户希望创建组件、重构重复 UI 模式、搭建设计系统，或提取 token 时。 Extract and consolidate reusable components, design tokens, and patterns into your design system. Identifies opportunities for systematic reuse and enriches your component library. Use when the user asks to create components, refactor repeated UI patterns, build a design system, or extract tokens.
 argument-hint: "[target]"
 ---
 

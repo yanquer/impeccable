@@ -73,6 +73,41 @@ for (const [key, config] of Object.entries(PROVIDERS)) {
       expect(fs.existsSync(refPath)).toBe(true);
     });
 
+    if (key === 'codex') {
+      test('should emit Chinese-first bilingual description when description-zh is present', () => {
+        const skills = [{
+          name: 'test',
+          description: 'English description',
+          descriptionZh: '中文描述',
+          body: 'Body'
+        }];
+        transform(skills, TEST_DIR);
+        const parsed = parseFrontmatter(fs.readFileSync(skillPath(config, 'test'), 'utf-8'));
+        expect(parsed.frontmatter.description).toBe('中文描述。 English description');
+      });
+
+      test('should fall back to description when description-zh is missing', () => {
+        const skills = [{ name: 'test', description: 'English description', body: 'Body' }];
+        transform(skills, TEST_DIR);
+        const parsed = parseFrontmatter(fs.readFileSync(skillPath(config, 'test'), 'utf-8'));
+        expect(parsed.frontmatter.description).toBe('English description');
+      });
+    }
+
+    if (key !== 'codex') {
+      test('should ignore description-zh for non-Codex providers', () => {
+        const skills = [{
+          name: 'test',
+          description: 'English description',
+          descriptionZh: '中文描述',
+          body: 'Body'
+        }];
+        transform(skills, TEST_DIR);
+        const parsed = parseFrontmatter(fs.readFileSync(skillPath(config, 'test'), 'utf-8'));
+        expect(parsed.frontmatter.description).toBe('English description');
+      });
+    }
+
     // Field-specific tests based on provider config
     if (config.frontmatterFields.includes('user-invocable')) {
       test('should emit user-invocable for user-invocable skills', () => {

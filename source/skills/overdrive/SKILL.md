@@ -1,6 +1,7 @@
 ---
 name: overdrive
 description: "Pushes interfaces past conventional limits with technically ambitious implementations — shaders, spring physics, scroll-driven reveals, 60fps animations. Use when the user wants to wow, impress, go all-out, or make something that feels extraordinary."
+description-zh: "用技术上更激进的实现把界面推到常规边界之外，例如着色器、弹簧物理、滚动驱动揭示和 60fps 动画。适用于用户想要惊艳效果、希望打动人、全力拉满，或做出非同寻常体验时。"
 argument-hint: "[target]"
 user-invocable: true
 ---

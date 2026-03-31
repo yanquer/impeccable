@@ -1,6 +1,7 @@
 ---
 name: critique
 description: "Evaluate design from a UX perspective, assessing visual hierarchy, information architecture, emotional resonance, cognitive load, and overall quality with quantitative scoring, persona-based testing, and actionable feedback. Use when the user asks to review, critique, evaluate, or give feedback on a design or component."
+description-zh: "从 UX 视角评估设计，围绕视觉层级、信息架构、情感共鸣、认知负荷和整体质量进行量化评分、基于用户画像的测试与可执行反馈。适用于用户要求审查、批评、评估，或为某个设计或组件提供反馈时。"
 argument-hint: "[area (feature, page, component...)]"
 user-invocable: true
 ---

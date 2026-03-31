@@ -1,6 +1,7 @@
 ---
 name: harden
 description: "Improve interface resilience through better error handling, i18n support, text overflow handling, and edge case management. Makes interfaces robust and production-ready. Use when the user asks to harden, make production-ready, handle edge cases, add error states, or fix overflow and i18n issues."
+description-zh: "通过更好的错误处理、i18n 支持、文本溢出处理和边界情况管理提升界面韧性，使其更健壮、更适合生产环境。适用于用户要求加固、投入生产、处理边界情况、补充错误状态，或修复溢出与 i18n 问题时。"
 argument-hint: "[target]"
 user-invocable: true
 ---
@@ -352,4 +353,3 @@ Test thoroughly with edge cases:
 - **Empty**: Remove all data, test empty states
 
 Remember: You're hardening for production reality, not demo perfection. Expect users to input weird data, lose connection mid-flow, and use your product in unexpected ways. Build resilience into every component.
-

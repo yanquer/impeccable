@@ -7,7 +7,19 @@
  * - displayName: human-readable name for log output (e.g. 'Claude Code')
  * - frontmatterFields: which optional fields to emit beyond name + description
  * - bodyTransform: optional function (body, skill) => transformed body
+ * - descriptionResolver: optional (skill) => description override for frontmatter
  */
+function joinChineseFirstDescription(descriptionZh, description) {
+  const zh = (descriptionZh || '').trim();
+  const en = (description || '').trim();
+
+  if (!zh) return en;
+  if (!en) return zh;
+
+  const zhWithPunctuation = /[。！？.!?]$/.test(zh) ? zh : `${zh}。`;
+  return `${zhWithPunctuation} ${en}`;
+}
+
 export const PROVIDERS = {
   cursor: {
     provider: 'cursor',
@@ -32,6 +44,7 @@ export const PROVIDERS = {
     configDir: '.codex',
     displayName: 'Codex',
     frontmatterFields: ['argument-hint', 'license'],
+    descriptionResolver: (skill) => joinChineseFirstDescription(skill.descriptionZh, skill.description),
   },
   agents: {
     provider: 'agents',

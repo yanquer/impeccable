@@ -1,6 +1,6 @@
 ---
 name: animate
-description: Review a feature and enhance it with purposeful animations, micro-interactions, and motion effects that improve usability and delight. Use when the user mentions adding animation, transitions, micro-interactions, motion design, hover effects, or making the UI feel more alive.
+description: 审视现有功能并加入有目的的动画、微交互和动效，提升可用性与愉悦感。适用于用户提到添加动画、过渡、微交互、运动设计、悬停效果，或希望界面更有生命力时。 Review a feature and enhance it with purposeful animations, micro-interactions, and motion effects that improve usability and delight. Use when the user mentions adding animation, transitions, micro-interactions, motion design, hover effects, or making the UI feel more alive.
 argument-hint: "[target]"
 ---
 

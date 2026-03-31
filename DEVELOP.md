@@ -16,6 +16,7 @@ For detailed harness capabilities (which frontmatter fields each supports, place
 ---
 name: skill-name
 description: What this skill provides
+description-zh: 中文描述（可选，仅用于 Codex 输出增强）
 argument-hint: "[target]"
 user-invocable: true
 license: License info (optional)
@@ -28,6 +29,7 @@ Your skill instructions here...
 **Frontmatter fields** (based on [Agent Skills spec](https://agentskills.io/specification)):
 - `name` (required): Skill identifier (1-64 chars, lowercase/numbers/hyphens)
 - `description` (required): What the skill provides (1-1024 chars)
+- `description-zh` (optional, repo extension): Chinese description used only by the Codex build; when present, Codex emits a Chinese-first bilingual `description` while other providers keep using `description`
 - `user-invocable` (optional): Boolean -- if `true`, the skill can be invoked as a slash command
 - `argument-hint` (optional): Hint shown during autocomplete (e.g., `[target]`, `[area (feature, page...)]`)
 - `license` (optional): License/attribution info
@@ -105,6 +107,7 @@ scripts/
      configDir: '.my-provider',
      displayName: 'My Provider',
      frontmatterFields: ['user-invocable', 'argument-hint', 'license'],
+     descriptionResolver: (skill) => skill.description,
    }
    ```
 
@@ -121,6 +124,7 @@ scripts/
 | `displayName` | Human-readable name for build logs |
 | `frontmatterFields` | Which optional fields to emit (see `factory.js` FIELD_SPECS) |
 | `bodyTransform` | Optional `(body, skill) => body` function for post-processing |
+| `descriptionResolver` | Optional `(skill) => string` hook to override the emitted `description` |
 | `placeholderProvider` | Override which PROVIDER_PLACEHOLDERS key to use (for variants sharing config) |
 
 ### Key Functions
@@ -137,7 +141,7 @@ scripts/
 ### Skill Writing
 
 1. **Focused scope**: One clear domain per skill
-2. **Clear descriptions**: Make purpose obvious
+2. **Clear descriptions**: Make purpose obvious; if you add `description-zh`, keep it aligned with the English `description`
 3. **Clear instructions**: LLM should understand exactly what to do
 4. **Include examples**: Where they clarify intent
 5. **State constraints**: What NOT to do as clearly as what to do

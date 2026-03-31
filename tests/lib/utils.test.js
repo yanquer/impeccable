@@ -370,6 +370,26 @@ Audit the code.`;
     expect(skills[0].userInvocable).toBe(true);
   });
 
+  test('should read description-zh when present', () => {
+    const skillContent = `---
+name: test-skill
+description: English description
+description-zh: 中文描述
+---
+
+Skill instructions here.`;
+
+    const skillDir = path.join(testRootDir, 'source/skills/test-skill');
+    ensureDir(skillDir);
+    fs.writeFileSync(path.join(skillDir, 'SKILL.md'), skillContent);
+
+    const { skills } = readSourceFiles(testRootDir);
+
+    expect(skills).toHaveLength(1);
+    expect(skills[0].description).toBe('English description');
+    expect(skills[0].descriptionZh).toBe('中文描述');
+  });
+
   test('should read skill with reference files', () => {
     const skillContent = `---
 name: frontend-design
@@ -455,6 +475,7 @@ Frontend design instructions.`;
     const skillContent = `---
 name: test-skill
 description: A comprehensive test skill
+description-zh: 一个完整的测试技能
 license: Apache-2.0
 compatibility: claude-code
 user-invocable: true
@@ -471,6 +492,7 @@ Body content.`;
 
     expect(skills[0].name).toBe('test-skill');
     expect(skills[0].description).toBe('A comprehensive test skill');
+    expect(skills[0].descriptionZh).toBe('一个完整的测试技能');
     expect(skills[0].license).toBe('Apache-2.0');
     expect(skills[0].compatibility).toBe('claude-code');
     expect(skills[0].userInvocable).toBe(true);

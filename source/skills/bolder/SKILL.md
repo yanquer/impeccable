@@ -1,6 +1,7 @@
 ---
 name: bolder
 description: "Amplify safe or boring designs to make them more visually interesting and stimulating. Increases impact while maintaining usability. Use when the user says the design looks bland, generic, too safe, lacks personality, or wants more visual impact and character."
+description-zh: "放大过于安全或乏味的设计表达，使界面更有视觉吸引力和刺激感，同时保持可用性。适用于用户认为设计平淡、通用、过于保守、缺少个性，或希望更有冲击力和辨识度时。"
 argument-hint: "[target]"
 user-invocable: true
 ---

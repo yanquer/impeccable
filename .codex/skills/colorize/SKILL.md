@@ -1,6 +1,6 @@
 ---
 name: colorize
-description: Add strategic color to features that are too monochromatic or lack visual interest, making interfaces more engaging and expressive. Use when the user mentions the design looking gray, dull, lacking warmth, needing more color, or wanting a more vibrant or expressive palette.
+description: 为过于单色或缺乏视觉趣味的功能加入有策略的色彩，使界面更有吸引力和表现力。适用于用户提到设计发灰、沉闷、缺乏温度、需要更多颜色，或希望拥有更鲜明、更有表现力的配色时。 Add strategic color to features that are too monochromatic or lack visual interest, making interfaces more engaging and expressive. Use when the user mentions the design looking gray, dull, lacking warmth, needing more color, or wanting a more vibrant or expressive palette.
 argument-hint: "[target]"
 ---
 

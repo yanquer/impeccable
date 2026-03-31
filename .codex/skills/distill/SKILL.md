@@ -1,6 +1,6 @@
 ---
 name: distill
-description: Strip designs to their essence by removing unnecessary complexity. Great design is simple, powerful, and clean. Use when the user asks to simplify, declutter, reduce noise, remove elements, or make a UI cleaner and more focused.
+description: 通过移除不必要的复杂性，把设计提炼到核心，让界面更简单、有力、干净。适用于用户要求简化、去杂、减少噪音、删减元素，或让 UI 更清爽、更聚焦时。 Strip designs to their essence by removing unnecessary complexity. Great design is simple, powerful, and clean. Use when the user asks to simplify, declutter, reduce noise, remove elements, or make a UI cleaner and more focused.
 argument-hint: "[target]"
 ---
 

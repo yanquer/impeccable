@@ -1,6 +1,6 @@
 ---
 name: polish
-description: Performs a final quality pass fixing alignment, spacing, consistency, and micro-detail issues before shipping. Use when the user mentions polish, finishing touches, pre-launch review, something looks off, or wants to go from good to great.
+description: 在发布前进行最后一轮质量打磨，修复对齐、间距、一致性和微小细节问题。适用于用户提到润色、收尾、上线前检查、感觉哪里不对，或希望把体验从不错提升到出色时。 Performs a final quality pass fixing alignment, spacing, consistency, and micro-detail issues before shipping. Use when the user mentions polish, finishing touches, pre-launch review, something looks off, or wants to go from good to great.
 argument-hint: "[target]"
 ---
 

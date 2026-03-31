@@ -1,6 +1,7 @@
 ---
 name: audit
 description: "Run technical quality checks across accessibility, performance, theming, responsive design, and anti-patterns. Generates a scored report with P0-P3 severity ratings and actionable plan. Use when the user wants an accessibility check, performance audit, or technical quality review."
+description-zh: "执行涵盖无障碍、性能、主题、响应式和反模式的技术质量检查，输出带有 P0-P3 严重级别和可执行建议的评分报告。适用于用户需要可访问性检查、性能审计或技术质量评审时。"
 argument-hint: "[area (feature, page, component...)]"
 user-invocable: true
 ---

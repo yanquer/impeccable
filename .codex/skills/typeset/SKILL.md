@@ -1,6 +1,6 @@
 ---
 name: typeset
-description: Improves typography by fixing font choices, hierarchy, sizing, weight, and readability so text feels intentional. Use when the user mentions fonts, type, readability, text hierarchy, sizing looks off, or wants more polished, intentional typography.
+description: 优化字体选择、层级、字号、字重和可读性，让文字显得更有意图、更讲究。适用于用户提到字体、排版、可读性、文本层级、字号看起来不对，或希望获得更精致、更有意识的文字编排时。 Improves typography by fixing font choices, hierarchy, sizing, weight, and readability so text feels intentional. Use when the user mentions fonts, type, readability, text hierarchy, sizing looks off, or wants more polished, intentional typography.
 argument-hint: "[target]"
 ---
 

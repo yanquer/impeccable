@@ -1,6 +1,7 @@
 ---
 name: delight
 description: "Add moments of joy, personality, and unexpected touches that make interfaces memorable and enjoyable to use. Elevates functional to delightful. Use when the user asks to add polish, personality, animations, micro-interactions, delight, or make an interface feel fun or memorable."
+description-zh: "加入令人愉悦的瞬间、个性化表达和意外的小细节，让界面更难忘、更好用，把功能性体验提升为令人喜爱的体验。适用于用户希望增加润色、个性、动画、微交互、愉悦感，或让界面更有趣、更令人难忘时。"
 argument-hint: "[target]"
 user-invocable: true
 ---

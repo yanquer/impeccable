@@ -132,6 +132,7 @@ Command prompt here. Use {{argname}} placeholders for arguments.
 ---
 name: skill-name
 description: Clear description of what this skill provides
+description-zh: 中文描述（可选，仅用于 Codex 输出增强）
 license: License info (optional)
 ---
 
@@ -182,6 +183,7 @@ Run: `bun run build`
   - Invoked as `/prompts:<name>`
 - **Skills**: Agent Skills standard → `dist/codex/.codex/skills/{name}/SKILL.md`
   - Same SKILL.md format as Claude Code with YAML frontmatter
+  - If source includes `description-zh`, Codex build maps it into a Chinese-first bilingual output `description`
   - Reference files in skill subdirectories
 - **Installation**: Extract ZIP into your project root, creates `.codex/` folder
 
@@ -247,4 +249,3 @@ End users can copy files directly without needing build tools.
 - [Gemini CLI GEMINI.md](https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/gemini-md.md)
 - [Codex CLI Slash Commands](https://developers.openai.com/codex/guides/slash-commands)
 - [Codex CLI Skills](https://developers.openai.com/codex/skills/)
-

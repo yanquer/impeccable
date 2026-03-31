@@ -1,6 +1,6 @@
 ---
 name: clarify
-description: Improve unclear UX copy, error messages, microcopy, labels, and instructions to make interfaces easier to understand. Use when the user mentions confusing text, unclear labels, bad error messages, hard-to-follow instructions, or wanting better UX writing.
+description: 优化不清晰的 UX 文案、错误信息、微文案、标签和说明，让界面更容易理解。适用于用户提到文案令人困惑、标签不清、错误提示差、说明难以跟随，或希望提升 UX 写作时。 Improve unclear UX copy, error messages, microcopy, labels, and instructions to make interfaces easier to understand. Use when the user mentions confusing text, unclear labels, bad error messages, hard-to-follow instructions, or wanting better UX writing.
 argument-hint: "[target]"
 ---
 
