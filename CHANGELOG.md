@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file.
 
+[中文版本](CHANGELOG.zh-CN.md)
+
 ## [Unreleased]
 
 ### Added

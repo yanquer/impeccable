@@ -2,6 +2,8 @@
 
 The vocabulary you didn't know you needed. 1 skill, 20 commands, and curated anti-patterns for impeccable frontend design.
 
+[中文说明](README.zh-CN.md)
+
 > **Quick start:** Visit [impeccable.style](https://impeccable.style) to download ready-to-use bundles.
 
 ## Why Impeccable?
